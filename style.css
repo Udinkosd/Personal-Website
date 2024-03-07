@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Russo+One&display=swap);
 
 :root {
   --primary-color: #a855f7;
   --primary-color-dark: #c0c0c0;
   --secondary-color: #b3b3b3;
-  --text-dark: #ffffff;
-  --text-light: #c0c0c0;
+  --background-color: rgb(0, 0, 0);
+  --text-dark: #ececec;
+  --text-light: rgb(255, 255, 255);
   --max-width: 1200px;
   background: linear-gradient(to right, #3c1a36, #160a20, #160a20);
 }
@@ -15,7 +17,8 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Calibri", sans-serif;
+  margin: 0px;
 }
 
 /*-------------------------------------NAVBAR------------------------------*/
@@ -119,7 +122,7 @@ ul li a {
   border: 2px solid transparent;
   text-decoration: none;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--text-light);
   transition: 0.3s;
 }
 
@@ -148,28 +151,36 @@ ul li a:hover {
 }
 
 .subtitle {
-  letter-spacing: 2px;
-  color: var(--text-light);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  text-align: left;
+  font-family: "Arial-Bold", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .title {
   font-size: 50px;
-  font-weight: 400;
-  line-height: 3rem;
+  font-weight: 350;
+  line-height: 60px;
   color: var(--text-dark);
   margin-bottom: 1px;
+  margin-top: 15px;
 }
 
 .title span {
-  font-weight: 600;
+  font-family: "Arial-Regular", sans-serif;
+  font-size: 41px;
+  font-weight: 900;
 }
 
 .description {
+  color: var(--text-dark);
+  text-align: left;
+  font-family: "Calibri-Regular", sans-serif;
+  font-size: 16px;
   line-height: 30px;
-  color: var(--text-light);
-  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
 }
 
 .action__btns {
@@ -192,6 +203,7 @@ ul li a:hover {
 .hire__me {
   background-color: var(--primary-color);
   color: #ffffff;
+  border-radius: 10px;
 }
 
 .hire__me:hover {
@@ -200,6 +212,7 @@ ul li a:hover {
 
 .portfolio {
   color: var(--primary-color);
+  border-radius: 10px;
 }
 
 .portfolio:hover {
@@ -221,7 +234,8 @@ ul li a:hover {
 /*-------------------------------------INTRODUCTION------------------------------*/
 
 .static_section {
-  padding-top: 100px;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 .static__section {
@@ -239,15 +253,15 @@ ul li a:hover {
   gap: 30px;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: center;  
+  border-radius: 21px;
+  border-style: solid;
+  border-color: #d9d9d9;
 }
 
 .static__statistic {
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
 }
 
 .static__statistic p {
@@ -255,15 +269,18 @@ ul li a:hover {
 }
 
 .static__statistic p:first-child {
-  font-size: 2rem;
+  font-family: 'Russo One', sans-serif;
+  font-size: 41px;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #a855f7;
+  color: #a759f5;
 }
 
 .static__statistic p:last-child {
-  font-size: 1rem;
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
   font-weight:545;
+  color: var(--text-dark);
 }
 
 .content {
@@ -271,15 +288,11 @@ ul li a:hover {
   flex-direction: column;
 }
 
-.static_section {
-  padding-top: 100px;
-}
-
 .static__section {
   min-height: 200px;
   max-width: var(--max-width);
   margin: auto;
-  padding: 10px;
+  padding: 45px;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
@@ -293,19 +306,24 @@ ul li a:hover {
   justify-content: center;
 }
 
-.static__statistic {
+.description-a {
+  color: var(--text-dark);
+  width: 40%;
+  height: 70%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column: 1 / -1;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  background-color: #ffffff;
-  /* border: 2px solid #ffffff; */
-  border-radius: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
 }
 
 /*-------------------------------------INTRODUCTION------------------------------*/
 
 .expertise_section {
-  padding-bottom: 100px;
+  padding-bottom: 5px;
 }
 
 .expertise__section {
@@ -326,6 +344,27 @@ ul li a:hover {
 }
 
 /*-------------------------------------INTRODUCTION------------------------------*/
+
+/*-------------------------------------EXPERTISE CONTAINER------------------*/
+
+.expertise {
+  background-color: var(--background-color);
+}
+
+/*-------------------------------------EXPERTISE CONTAINER------------------*/
+
+.resume {
+  display: flex;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.resume img {
+  width: 800px;
+}
+
 
 @media (max-width: 750px) {
   nav .checkbox {
@@ -359,5 +398,4 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
-  
 }
