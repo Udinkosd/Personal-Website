@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Calibri&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sigana');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+            
+.font-calibri {
+  font-family: 'Calibri', sans-serif;
+}
+
+.font-sigana {
+  font-family: 'Sigana', sans-serif;
+}
