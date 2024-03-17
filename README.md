@@ -1,1 +1,1 @@
-A personal portfolio website built with Next.js, and styled with Tailwind css.
+A personal portfolio website built with HTML and styled with Tailwind css.
