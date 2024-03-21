@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{html,js}',
+    './src/**/*.{js,jsx,ts,tsx}',
     './index.html',
 ],
   theme: {
     extend: {
+      backgroundImage: {
+        'background-texture': "url('*')",
+      },
       fontSize: {
         sm: '0.8rem',
         base: '1rem',
