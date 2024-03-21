@@ -3,6 +3,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'compass/css3';
             
 .font-calibri {
   font-family: 'Calibri', sans-serif;
@@ -10,4 +11,136 @@
 
 .font-sigana {
   font-family: 'Sigana', sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.revealed {
+  opacity: 100;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.opacity-100 {
+    opacity: 1;
+}
+.revealed {
+    animation: reveal 4s forwards;
+}
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-cursor {
+  color: white;
+  font-size: 0.85em;
+}
+
+a {
+  color: #1a1a1a; /* Black color */
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.availability {
+  color: #ffffff; /* White color */
+  margin-right: 1em;
+  position: absolute;
+  right: 100px;
+  top: 8px;
+  width: 200px;
+  transition: all 300ms;
+}
+
+.button {
+  border: 3px #ffffff solid; /* Red color */
+  bottom: 2px;
+  color: #ffffff; /* Red color */
+  display: inline-block;
+  font-weight: bold;
+  height: 44px;
+  overflow: hidden;
+  padding: 0.5em 1.5em 0.5em 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 117px;
+  border-radius: 100px;
+  transition: all 300ms;
+}
+
+
+.button:hover {
+  border-color: #6567ef; /* Red color */
+  color: #ffffff; /* Red color */
+  width: 340px;
+}
+
+.button:hover .availability {
+  color: #ffffff; /* Red color */
+  display: inline-block;
+}
+
+.button:active {
+  background: #ffffff; /* Darken Red color */
+  border-color: #ffffff; /* Darken Red color */
+}
+
+.hire-me {
+  position: absolute;
+  right: 24px;
+  top: 8px;
+}
+
+.icon-scroll,
+
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
 }
