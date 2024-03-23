@@ -22,38 +22,5 @@
 
         </section>
     </section>
-    <script>
-        window.onload = function() {
-            var homeSection = document.getElementById('home');
-            var aboutSection = document.getElementById('showAbout');
-            var portfolioGallery = document.getElementById('portfolioGallery');
-    
-            // Set initial display for all sections
-            Array.from([aboutSection, portfolioGallery])
-                .forEach(section => {
-                    section.classList.add('hidden');
-                    section.classList.add('opacity-0');
-                });
-    
-            // Add scroll event listener
-            window.addEventListener('scroll', function() {
-                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
-                // If the user scrolls down beyond the home section, show the about section
-                if (scrollPosition > homeSection.offsetTop) {
-                    aboutSection.classList.remove('hidden');
-                    aboutSection.classList.add('opacity-100');
-                    aboutSection.classList.add('revealed');
-                }
-    
-                // If the user scrolls down beyond the about section, show the portfolioGallery
-                if (scrollPosition > (homeSection.offsetTop + aboutSection.offsetHeight)) {
-                    portfolioGallery.classList.remove('hidden');
-                    portfolioGallery.classList.add('opacity-100');
-                    portfolioGallery.classList.add('revealed');
-                }
-            });
-        }
-    </script>
 </body>
 </html>
