@@ -34,3 +34,19 @@ function typingText() {
 }
 
 typingText();
+
+function toggleResponsiveClass() {
+  // Remove the event listener from the window object when it is not needed anymore
+  window.removeEventListener("resize", toggleResponsiveClass);
+
+  // Check if the screen size is smaller than or equal to 768px
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Add the responsive class to the content section
+    document.getElementById("content").classList.add("responsive");
+
+    // Add the event listener to the window object again
+    window.addEventListener("resize", toggleResponsiveClass);
+  } else {
+    // Remove the responsive class from the content section
+    document.getElementById("content").classList.remove("responsive");}
+}
