@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/dist/typed.min.js" integrity="sha384-CJ9vj7QvZsOJwilwh6ZrYWluQZ7/0Q8a6LxKcmMB5p8B71KjG5gtMH/JcqD6fKR1" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link rel="stylesheet" href="assets/css/fullpage.css">
+    <link rel="stylesheet" href="assets/js/fullpage.js">
 </head>
-<body >
-    <div id="fullPage">
-        <section class="min-h-screen bg-gradient-to-tr from-slate-800 from-5% via-slate-900 to-black py-20">
-            <section class="container mx-auto px-4 sm:px-6 lg:px-8" id="content"></section>
-            <script src="assets/script.js"></script>
-                <div class="section p1">
+<body>
+    <div id='fullPage'>
+        <div id="page1" class="section">
+            <section class="min-h-screen bg-gradient-to-tr from-slate-800 from-5% via-slate-900 to-black py-20">
+                <section class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <section id="navbar">
                         <nav class="fixed font-calibri font-bold text-xl w-full z-20 top-0 left-0 dark:border-gray-600">
                             <div class="max-w-screen-xl mx-auto grid">
@@ -49,38 +48,41 @@
                                     </div>
                                     
                                     <div class="flex md:justify-end whitespace-nowrap">
-                                        <a href="#_" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                        <a href="#page4" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                                             <span class="w-full h-full bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500 absolute"></span>
                                             <span class="relative px-2 py-1 text-xs sm:text-sm md:text-base lg:text-lg transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
                                                 <span class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm md:text-base lg:text-lg">Let's Talk</span>
                                             </span>
                                         </a>
-                                        <script src="assets/script.js"></script>
+                                        <script src="assets/js/script.js"></script>
                                         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                                     </div>
                                 </div>
                             </div>
                         </nav>
                     </section>
-                    <section id="welcome">
-                        <div class="font-sigana text-9xl flex justify-center items-center pt-56 pb-56 whitespace-nowrap">
-                            <h1 class="bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500 bg-clip-text text-white auto-type sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
-                                Hello!
-                            </h1>
-                            <script src="assets/script.js"></script>
+                    <section id="welcome" class="container px-20 mx-auto cols 1 row 2">
+                        <div id="typed-container" class="font-sigana text-9xl flex justify-center items-center pt-56 pb-56 whitespace-nowrap">
+                            <h1 id="typed-text" class="bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500 bg-clip-text text-white auto-type sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"></h1>
                         </div>
                         <div class="flex justify-center items-center">
                             <div class='icon-scroll'></div>
                         </div>
                     </section>
-                </div>
-                <div class="section p2">
+                    <script src="/assets/js/typed.umd.js"></script>
+                </section>
+            </section>
+        </div>
+
+        <div id="page2" class="section">
+            <section class="min-h-screen bg-gradient-to-tr from-slate-800 from-5% via-slate-900 to-black py-20">
+                <section class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <section id="showAbout">
                         <div class="grid grid-cols-2 place-items-left min-h-full min-3xl p-16">
                             <div class="max-w-xl text-white pt-16">
                                 <h1 class="text-5xl font-normal font-family-sans leading-tight">
                                     I'm
-                                    <span class="font-bold">Abdul Rahman</span>
+                                    <span class="font-bold">Abdul Rahman,</span>
                                     <span class="font-bold">Graphic Designer</span>
                                 </h1>
                                 <p class="text-white text-lg font-normal font-family-sans leading-tight text-white-800 pt-10">
@@ -150,9 +152,13 @@
                             </a>
                         </div>
                     </section>
-                </div>
+                </section>
+            </section>
+        </div>
 
-                <div class="section p3">
+        <div id="page3" class="section">
+            <section class="min-h-screen bg-gradient-to-tr from-slate-800 from-5% via-slate-900 to-black py-20">
+                <section class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <section id="portfolioGallery">
                         <div class="max-w-screen-xl mx-auto grid flex flex-col items-center p-4 pt-16">
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
@@ -193,61 +199,70 @@
                                     </a>
                                 </div>                                                          
                         </div>
-                        <section id="contactPage">
-                            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                                <h2
-                                    class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                                    Thanks for Viewing!</h2>
-                                <p
-                                    class="text-white text-lg font-normal font-family-sans leading-tight text-center mt-10 mb-16">
-                                    If you're interested in hiring me, please let me know. You can either drop me an email, send
-                                    me a DM on Instagram or through Upwork and Fiverr. Additionally, for more information, you
-                                    can check out my Linktree. I would be glad to work with you! Thank you.
-                                </p>
-                                <form id="contactForm" action="process.php" method="post" class="space-y-8">
-                                    <div>
-                                        <label for="name" class="block mb-2 text-sm font-medium text-white">Name</label>
-                                        <input type="text" id="name" name="name"
-                                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                                            placeholder="Name" required>
-                                    </div>
-                                    <div>
-                                        <label for="email" class="block mb-2 text-sm font-medium text-white">Your email</label>
-                                        <input type="email" id="email" name="email"
-                                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                                            placeholder="Example@example.com" required>
-                                    </div>
-                                    <div class="sm:col-span-2">
-                                        <label for="message" class="block mb-2 text-sm font-medium text-white">Your
-                                            message</label>
-                                        <textarea id="message" name="message" rows="6"
-                                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Leave a message..." required></textarea>
-                                    </div>
-                                    <div class="flex justify-start pt-5">
-                                        <a href="#_"
-                                            class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-                                            <span
-                                                class="w-full h-full bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500 absolute "></span>
-                                            <span
-                                                class="relative px-2 py-1 text-xs transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400 flex items-center justify-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    viewBox="0 0 24 24" fill="white" class="inline-block w-4 h-4 mr-1">
-                                                    <!-- Moved SVG element before text -->
-                                                    <path
-                                                        d="m20.34 9.32l-14-7a3 3 0 0 0-4.08 3.9l2.4 5.37a1.06 1.06 0 0 1 0 .82l-2.4 5.37A3 3 0 0 0 5 22a3.14 3.14 0 0 0 1.35-.32l14-7a3 3 0 0 0 0-5.36Zm-.89 3.57l-14 7a1 1 0 0 1-1.35-1.3l2.39-5.37a2 2 0 0 0 .08-.22h6.89a1 1 0 0 0 0-2H6.57a2 2 0 0 0-.08-.22L4.1 5.41a1 1 0 0 1 1.35-1.3l14 7a1 1 0 0 1 0 1.78" />
-                                                </svg>
-                                                <span class="font-calibri font-bold text-lg text-white">Send Message</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </form>
-                            </div>
-                        </section>
                     </section>
-                </div>
-
-                <div class="section p4">
+                </section>
+            </section>
+        </div>
+        
+        <div id="page4" class="section">
+            <section class="min-h-screen bg-gradient-to-tr from-slate-800 from-5% via-slate-900 to-black py-20">
+                <section class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <section id="contactPage">
+                        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                            <h2
+                                class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                                Thanks for Viewing!</h2>
+                            <p
+                                class="text-white text-lg font-normal font-family-sans leading-tight text-center mt-10 mb-16">
+                                If you're interested in hiring me, please let me know. You can either drop me an email, send
+                                me a DM on Instagram or through Upwork and Fiverr. Additionally, for more information, you
+                                can check out my Linktree. I would be glad to work with you! Thank you.
+                            </p>
+                            <form id="contactForm" action="process.php" method="post" class="space-y-8">
+                                <div>
+                                    <label for="name" class="block mb-2 text-sm font-medium text-white">Name</label>
+                                    <input type="text" id="name" name="name"
+                                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                        placeholder="Name" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2 text-sm font-medium text-white">Your email</label>
+                                    <input type="email" id="email" name="email"
+                                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                        placeholder="Example@example.com" required>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="message" class="block mb-2 text-sm font-medium text-white">Your
+                                        message</label>
+                                    <textarea id="message" name="message" rows="6"
+                                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Leave a message..." required></textarea>
+                                </div>
+                                <div class="flex justify-start pt-5">
+                                    <a href="#_"
+                                        class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                        <span
+                                            class="w-full h-full bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500 absolute "></span>
+                                        <span
+                                            class="relative px-2 py-1 text-xs transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24" fill="white" class="inline-block w-4 h-4 mr-1">
+                                                <path
+                                                    d="m20.34 9.32l-14-7a3 3 0 0 0-4.08 3.9l2.4 5.37a1.06 1.06 0 0 1 0 .82l-2.4 5.37A3 3 0 0 0 5 22a3.14 3.14 0 0 0 1.35-.32l14-7a3 3 0 0 0 0-5.36Zm-.89 3.57l-14 7a1 1 0 0 1-1.35-1.3l2.39-5.37a2 2 0 0 0 .08-.22h6.89a1 1 0 0 0 0-2H6.57a2 2 0 0 0-.08-.22L4.1 5.41a1 1 0 0 1 1.35-1.3l14 7a1 1 0 0 1 0 1.78" />
+                                            </svg>
+                                            <span class="font-calibri font-bold text-lg text-white">Send Message</span>
+                                            <div id="popup-message" class="hidden mt-5">
+                                                <div class="bg-green-300 text-green-800 py-3 px-4 rounded-md">
+                                                    <span class="font-bold">Success:</span> Your message has been sent.
+                                                    <script src="assets/js/pop-up.js"></script>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
                     <section id="footer">
                         <div class="flex flex-col items-center text-center text-surface">
                             <div class="mb-6 flex justify-center space-x-2">
@@ -307,21 +322,23 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="w-full p-4 text-center text-white"> Copyright © 2024 <a
-                                href="https://www.iampointy.com/">PointyStudio</a>. All Rights Reserved
+                        <div class="w-full p-4 text-center text-white"> Copyright © 2024 <a href="https://www.iampointy.com/">PointyStudio</a>. All Rights Reserved
                         </div>
                     </section>
-                </div>
+                </section>
             </section>
-        </section>
+        </div>
     </div>
-    <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true
-        })
-    </script>
-    <script src="assets/scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/active.js"></script>
+    <div id="fp-nav" class="fp-right">
+        <ul>
+            <li id="page1-nav"><a href="" class=""><span class="fp-sr-only"></span><span></span></a><div class="fp-tooltip fp-right">Home</div></li>
+            <li id="page2-nav"><a href="" class=""><span class="fp-sr-only"></span><span></span></a><div class="fp-tooltip fp-right">About me</div></li>
+            <li id="page3-nav"><a href="" class=""><span class="fp-sr-only"></span><span></span></a><div class="fp-tooltip fp-right">Portfolio Gallery</div></li>
+            <li id="page4-nav"><a href="" class=""><span class="fp-sr-only"></span><span></span></a><div class="fp-tooltip fp-right">Contact me!</div></li>
+        </ul>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll.js"></script>
 </body>
-
 </html>
