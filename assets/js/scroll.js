@@ -1,10 +1,9 @@
 new fullpage('#fullPage', {
     autoScrolling: true,
-    anchors: ['page1', 'page2', 'page3', 'page4'],
-    sectionsColor: ['white', 'white', 'white', 'white'],
+    sectionsColor: ['yellow', 'green', 'purple', 'orange'],
     loopHorizontal: false,
     licenseKey: 'license here',
-    scrollingSpeed: 700,
+    scrollingSpeed: 1500,
     verticalCentered: false,
     credits: {
         enabled: false,
